@@ -1,0 +1,98 @@
+
+  Avinash Mullur
+
+
+package com.source.interview;
+
+public class MaximumNumbers {
+	
+	public static void largestNum(int a[])
+	{
+	    int small=a[0];
+	    int large =a[0];
+	    
+	    for(int i=1;i<a.length;i++)
+	    {
+	    	if(a[i]>large)
+	    	{
+	    		
+	    		large=a[i];
+	    	}
+	    	else
+	    	
+	    		if(a[i]<small)
+	    		{
+	    			small=a[i];
+	    		}
+	    		
+	    }
+	    	System.out.println("Largest num:"+large);
+	     	System.out.println("Largest num:"+small);
+	    
+	}
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+		int a[] = {45,4556,6546,43,7,34556,5345};
+		largestNum(a);
+		
+	}
+
+}
+
+*************************************************************************************************
+	package com.source.interview;
+
+import java.util.Scanner;
+
+public class Love {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int a=0;
+		System.out.println("Enter Number to check they are in love or not");
+		System.out.println("---------------------------------------------");
+		Scanner sc= new Scanner(System.in);
+		 a=sc.nextInt();
+		 
+		
+		if(a%2==0)
+		{
+			System.out.print("They are not in love..... i really treated you as my best friend ");
+		}
+		else
+		{
+			System.out.println("both are in love");
+		}
+		
+		
+	}
+
+}
+
+
+3) Generalization involves multiple entities and combine them into generalized entity and it creates number of entity sets and it creates high level entity with help of common features
+Specialization involves single entities  broken down into multiple sub-entities and it is reverse of generalization
+
+b)by using the declaration of class as a final.it can't be inherited by other class
+
+c)Using the interface we can alternate multiple inheritance and using the extends keyword we can access the alternative properties from parent class
+
+4)String class will be final in javaAPI because to make it immutable 
+
+5) sorted collection are compareTo method.
+
+6)ArrayList uses dynamic array to store the elements      LinkedList uses Doubly LinkedList store the elements
+  ArrayList implements only List                           LinkedList implements List and Queue
+
+7)ListIterator traverses in both forward and backward position
+  Iterator traverse only forward position
+
+11) by making the properties as a private ..using(private)keyword ..the properties can't access by the other classes only by setter,getter 
+    and consturctor throug we can access the properties...so Hema  will achieve the security
